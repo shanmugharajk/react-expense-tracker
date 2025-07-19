@@ -1,0 +1,41 @@
+{
+  "name": "react-expense-tracker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "react-router typegen && tsc -b",
+    "build": "dotenv -- react-router build",
+    "dev": "dotenv -- tsx server/server-dev.ts",
+    "start": "dotenv -- tsx server/server-prod.ts"
+  },
+  "dependencies": {
+    "@react-router/express": "^7.7.0",
+    "@react-router/node": "^7.7.0",
+    "compression": "^1.7.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "isbot": "^5.1.27",
+    "morgan": "^1.10.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.7.0"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.7.0",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/compression": "^1.7.5",
+    "@types/express": "^5.0.1",
+    "@types/express-serve-static-core": "^5.0.6",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "cross-env": "^7.0.3",
+    "dotenv-cli": "^8.0.0",
+    "tailwindcss": "^4.1.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
